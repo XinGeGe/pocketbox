@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>小巧盒 · PocketBox — 纯离线日常影像与效率工具箱</title>
+  <meta name="description" content="小巧盒（PocketBox）是一款轻量、100% 本地离线、零广告的 iOS 影像创作与日常效率工具箱。">
+  <link rel="icon" type="image/png" href="icon.png">
+  <style>
+    :root {
+      --bg: #f8f5fb;
+      --surface: #ffffff;
+      --text: #1c1b22;
+      --muted: #5c586b;
+      --accent: #e14b7b;
+      --accent-2: #7b61ff;
+      --border: rgba(28, 27, 34, 0.08);
+      --shadow: 0 12px 36px rgba(96, 62, 130, 0.08);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f1020;
+        --surface: #181a2c;
+        --text: #f4f2f8;
+        --muted: #a8a3ba;
+        --accent: #ff6b9d;
+        --accent-2: #9b82ff;
+        --border: rgba(255, 255, 255, 0.09);
+        --shadow: 0 14px 40px rgba(0, 0, 0, 0.35);
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang SC", "Helvetica Neue", sans-serif;
+      background:
+        radial-gradient(circle at 15% 10%, rgba(123, 97, 255, 0.14), transparent 42%),
+        radial-gradient(circle at 85% 12%, rgba(255, 107, 157, 0.14), transparent 42%),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+    .wrap {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 48px 20px 64px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 36px;
+    }
+    .app-icon {
+      width: 96px;
+      height: 96px;
+      border-radius: 22px;
+      box-shadow: 0 14px 30px rgba(123, 97, 255, 0.25);
+      margin-bottom: 16px;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: 30px;
+      letter-spacing: -0.02em;
+    }
+    .subtitle {
+      margin: 0 auto;
+      max-width: 560px;
+      color: var(--muted);
+      font-size: 15px;
+    }
+    .nav-pills {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 22px;
+    }
+    .pill {
+      display: inline-block;
+      padding: 10px 18px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 14px;
+      transition: transform 0.15s ease, opacity 0.15s ease;
+    }
+    .pill:hover { transform: translateY(-1px); opacity: 0.92; }
+    .pill-primary {
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      color: #fff;
+    }
+    .pill-secondary {
+      background: var(--surface);
+      color: var(--text);
+      border: 1px solid var(--border);
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 14px;
+      margin: 28px 0;
+    }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 18px 20px;
+      box-shadow: var(--shadow);
+    }
+    .card h3 {
+      margin: 0 0 6px;
+      font-size: 16px;
+    }
+    .card p {
+      margin: 0;
+      font-size: 13.5px;
+      color: var(--muted);
+    }
+    .badge {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--accent);
+      background: rgba(225, 75, 123, 0.12);
+      padding: 4px 10px;
+      border-radius: 999px;
+      margin-bottom: 10px;
+    }
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+      margin: 0 8px;
+    }
+    footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <img class="app-icon" src="icon.png" alt="小巧盒 PocketBox Icon">
+      <div class="badge">100% 本机离线 · 零广告 · 无需登录</div>
+      <h1>小巧盒 · PocketBox</h1>
+      <p class="subtitle">影像创作与日常效率，一箱全搞定。<br>100% on-device offline photo &amp; productivity toolbox for iPhone &amp; iPad.</p>
+      <div class="nav-pills">
+        <a class="pill pill-primary" href="privacy.html">隐私政策 · Privacy Policy</a>
+        <a class="pill pill-secondary" href="support.html">技术支持 · Support</a>
+      </div>
+    </header>
+
+    <section class="grid">
+      <div class="card">
+        <h3>证件照与签证照</h3>
+        <p>一寸/二寸/护照/考试/签证与自定义尺寸，本地 AI 智能抠图换底色，支持排版冲印。</p>
+      </div>
+      <div class="card">
+        <h3>GIF 表情与抠图贴纸</h3>
+        <p>视频裁剪转流畅 GIF 表情包，智能主体抠图加白边与配文，聊天斗图快人一步。</p>
+      </div>
+      <div class="card">
+        <h3>长图拼接</h3>
+        <p>多张截图或照片纵向/横向一键拼接，自定义间距、圆角与背景色，清晰导出。</p>
+      </div>
+      <div class="card">
+        <h3>文档扫描转 PDF</h3>
+        <p>自动边缘识别与透视矫正，多页连拍排序，一键合并导出高清 PDF 文档。</p>
+      </div>
+      <div class="card">
+        <h3>剪贴板备忘录（免费无限）</h3>
+        <p>快速收录文本与链接，支持收藏、搜索、快捷指令收录与 Face ID 隐私锁定。</p>
+      </div>
+      <div class="card">
+        <h3>提词器（免费无限）</h3>
+        <p>自定义字号、滚速与镜像模式，专注全屏录制口播与演讲不再卡壳。</p>
+      </div>
+    </section>
+
+    <footer>
+      <div>
+        <a href="privacy.html">隐私政策 (Privacy)</a> ·
+        <a href="support.html">技术支持 (Support)</a> ·
+        <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener">使用条款 (Apple EULA)</a>
+      </div>
+      <p style="margin-top:12px;">© 2026 PocketBox / 小巧盒. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>
