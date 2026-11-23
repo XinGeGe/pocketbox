@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>隐私政策 · Privacy Policy — MacPaste</title>
+  <link rel="icon" type="image/png" href="icon.png">
+  <style>
+    :root {
+      --bg: #f4f7fc;
+      --surface: #ffffff;
+      --text: #161822;
+      --muted: #565c70;
+      --accent: #197df5;
+      --border: rgba(22, 24, 34, 0.08);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0d101c;
+        --surface: #151929;
+        --text: #f2f4fa;
+        --muted: #9fa6be;
+        --accent: #3d9bff;
+        --border: rgba(255, 255, 255, 0.09);
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang SC", "Helvetica Neue", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.75;
+    }
+    .wrap {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 36px 20px 64px;
+    }
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 24px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 700;
+    }
+    .brand img { width: 32px; height: 32px; border-radius: 8px; }
+    .topbar a.link { color: var(--accent); text-decoration: none; font-size: 14px; font-weight: 600; }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 28px 26px;
+      margin-bottom: 20px;
+    }
+    h1 { margin: 0 0 6px; font-size: 26px; }
+    h2 { margin: 22px 0 8px; font-size: 18px; }
+    p, li { color: var(--muted); font-size: 15px; }
+    ul { padding-left: 20px; }
+    .meta { font-size: 13px; color: var(--muted); margin-bottom: 18px; }
+    a { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <a class="brand" href="index.html">
+        <img src="icon.png" alt="MacPaste">
+        <span>MacPaste</span>
+      </a>
+      <a class="link" href="support.html">技术支持 / Support</a>
+    </div>
+
+    <article class="card">
+      <h1>隐私政策（简体中文）</h1>
+      <div class="meta">生效与更新日期：2026 年 11 月</div>
+
+      <p>MacPaste 高度重视您的个人隐私与数据安全。本应用是一款 <strong>100% 本机离线运行</strong> 的 macOS 剪贴板历史管理工具，无需注册账号，不接入任何第三方广告、统计或行为追踪 SDK。</p>
+
+      <h2>1. 100% 本地存储，绝不上传云端</h2>
+      <p>您复制的所有历史记录（包括纯文本、富文本、链接、色值、文件路径、图片及其缩略图，以及图片 OCR 识别出的文字）<strong>仅保存在您的 Mac 本地存储目录中</strong>。我们不会收集、上传、出售或向任何第三方服务器传输您的任何剪贴板内容或搜索记录。</p>
+
+      <h2>2. 本地离线图片识字（OCR）</h2>
+      <p>图片文字识别功能完全调用 macOS 系统内置的 Apple Vision 框架在您的设备本地离线完成，图片内容绝不会离开您的 Mac。</p>
+
+      <h2>3. 敏感信息与密码保护</h2>
+      <ul>
+        <li>本应用默认遵循 <strong>nspasteboard.org</strong> 隐私规范，自动忽略标记为加密（Concealed）、临时（Transient）或自动生成的剪贴板内容。</li>
+        <li>默认忽略常见密码管理器应用（如 1Password、钥匙串访问、Bitwarden、KeePassXC 等），您也可随时在「偏好设置 → 隐私」中自由增删忽略列表，或在菜单栏一键暂停记录、清空历史。</li>
+      </ul>
+
+      <h2>4. App 内购买与订阅</h2>
+      <p>月度订阅、年度订阅与终身买断均通过 Apple StoreKit 与 Mac App Store 官方渠道安全处理。开发者无法获取或保存您的银行卡或 Apple ID 支付信息。</p>
+
+      <h2>5. 联系我们</h2>
+      <p>如果您对本隐私政策有任何疑问，请通过 <a href="support.html">技术支持页面</a> 中的联系邮箱与我们取得联系。</p>
+    </article>
+
+    <article class="card">
+      <h1>Privacy Policy (English)</h1>
+      <div class="meta">Effective Date: November 2026</div>
+
+      <p>MacPaste respects your privacy. The app is designed to run <strong>100% locally on your Mac</strong>, with no account registration, no cloud upload, no third-party analytics, and no advertising SDKs.</p>
+
+      <h2>1. 100% On-Device Storage</h2>
+      <p>All clipboard history—including plain text, rich text, links, colors, file paths, images, thumbnails, and recognized OCR text—is stored <strong>exclusively on your local Mac</strong>. We never collect, transmit, sell, or share your clipboard data or search queries with any external server.</p>
+
+      <h2>2. Offline Image OCR</h2>
+      <p>Image text recognition runs 100% offline on your Mac using Apple's built-in Vision framework. Your images never leave your device.</p>
+
+      <h2>3. Sensitive Content &amp; Password Protection</h2>
+      <ul>
+        <li>MacPaste follows the <strong>nspasteboard.org</strong> standard to automatically ignore concealed, transient, and auto-generated clipboard items.</li>
+        <li>Common password managers (such as 1Password, Keychain Access, Bitwarden, and KeePassXC) are excluded by default. You can customize ignored applications, pause recording, or clear history at any time.</li>
+      </ul>
+
+      <h2>4. In-App Purchases &amp; Subscriptions</h2>
+      <p>All subscriptions (Monthly, Yearly) and Lifetime purchases are securely processed by Apple through StoreKit and the Mac App Store. The developer never has access to your billing or payment information.</p>
+
+      <h2>5. Contact</h2>
+      <p>If you have any questions about this Privacy Policy, please reach out via our <a href="support.html">Support page</a>.</p>
+    </article>
+  </div>
+</body>
+</html>
